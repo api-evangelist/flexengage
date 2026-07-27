@@ -1,7 +1,25 @@
 aid: flexengage
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flexengage.png
 name: FlexEngage
-description: FlexEngage is a company surfaced as a portfolio company of bullpen-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  FlexEngage is a retail customer-engagement company that powered transactional and triggered
+  customer communications for retailers and brands, including digital receipts, order and shipping
+  notifications, and omnichannel messaging across email, SMS, and print. The company was backed by
+  Bullpen Capital and was acquired by Narvar in 2019. This API Evangelist profile was surfaced from
+  the Bullpen Capital portfolio; the public site (www.flexengage.com) is currently served behind
+  CloudFront and returns HTTP 403 to automated clients, so no public developer/API surface could be
+  captured during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/flexengage/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Retail
+- Customer Engagement
+- Transactional Communications
+- Messaging
+- Notifications
+- E-commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/flexengage-domain-security.yml
 - type: Website
   url: https://www.flexengage.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
