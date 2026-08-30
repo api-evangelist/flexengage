@@ -64,6 +64,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/narvar/
+  name: Narvar
+  x-relationship: acquired
+  x-evidence: "The company was backed by Bullpen Capital and was acquired by Narvar in 2019."
 - type: DomainSecurity
   url: security/flexengage-domain-security.yml
 - type: Website
